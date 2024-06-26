@@ -13,12 +13,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/<your-username>/adder-library.git"
+    "url": "https://github.com/ShamikBasu/sorti-fy.git"
   },
   "bugs": {
-    "url": "https://github.com/<your-username>/adder-library/issues"
+    "url": "https://github.com/ShamikBasu/sorti-fy/issues"
   },
-  "homepage": "https://github.com/<your-username>/adder-library#readme",
-  "author": "<Your Name> <your.email@example.com>",
-  "license": "MIT"
+  "homepage": "https://github.com/ShamikBasu/sorti-fy#readme",
+  "author": "",
+  "license": ""
 }
