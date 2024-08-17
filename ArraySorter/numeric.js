@@ -1,3 +1,8 @@
+/*
+    numericArraySort -> function to sort array with data as type number
+    quickSortAscending -> sorts data in ascending order using  quick sort
+    quickSortDescending -> sorts data in descending order using  quick sort
+*/
 function numericArraySort(array, ascending = true) {
     const copy = [...array];
 

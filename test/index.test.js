@@ -5,7 +5,7 @@ describe('sort', () => {
   it('should sort numbers in ascending order with default case', () => {
     const array = [3, 1, 4, 1, 5, 9];
     const expected = [1, 1, 3, 4, 5, 9];
-    console.log(sort(array));
+    //console.log(sort(array));
     expect(sort(array)).toEqual(expected);
   });
 
