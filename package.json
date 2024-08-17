@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:index": "jest index.test.js",
+    "test:getType": "jest getType.test.js"
   },
   "keywords": [
     "sort",
@@ -20,5 +22,8 @@
   },
   "homepage": "https://github.com/ShamikBasu/sorti-fy#readme",
   "author": "",
-  "license": ""
+  "license": "",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
 }
