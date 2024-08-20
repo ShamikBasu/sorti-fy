@@ -17,6 +17,47 @@ function numericArraySort(array, ascending = true) {
     }
 
 }
+
+function numericMultipleArraySort(array, ascending = true) {
+    if (array.length <= 1) {
+        return array;
+    }
+
+    const middle = Math.floor(array.length / 2);
+    const left = numericMultipleArraySort(array.slice(0, middle), ascending);
+    const right = numericMultipleArraySort(array.slice(middle), ascending);
+
+    return mergeArray(left, right, ascending);
+}
+
+function mergeArray(left, right, ascending) {
+    let resultArray = [], leftIndex = 0, rightIndex = 0;
+
+    while (leftIndex < left.length && rightIndex < right.length) {
+        if (ascending) {
+            if (left[leftIndex] < right[rightIndex]) {
+                resultArray.push(left[leftIndex]);
+                leftIndex++;
+            } else {
+                resultArray.push(right[rightIndex]);
+                rightIndex++;
+            }
+        } else {
+            if (left[leftIndex] > right[rightIndex]) {
+                resultArray.push(left[leftIndex]);
+                leftIndex++;
+            } else {
+                resultArray.push(right[rightIndex]);
+                rightIndex++;
+            }
+        }
+    }
+
+    return resultArray
+        .concat(left.slice(leftIndex))
+        .concat(right.slice(rightIndex));
+}
+
 function quickSortAscending(array) {
     if (array.length <= 1) {
         return array;
@@ -59,5 +100,6 @@ function quickSortDescending(array) {
 
 
 module.exports = {
-    numericArraySort
+    numericArraySort,
+    numericMultipleArraySort
 };
