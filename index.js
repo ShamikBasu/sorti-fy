@@ -19,7 +19,7 @@ const { numericArraySort, numericMultipleArraySort } = require('./ArraySorter/nu
         
         2.multipleSort(ascending = true, ...arrays)
          The function merges multiple arrays and sorts the merged result.
-         
+
             argument 1 : ascending (optional, default: true)
                         Type: boolean
                         Description: Determines the order in which the merged array should be sorted.
@@ -34,6 +34,7 @@ const { numericArraySort, numericMultipleArraySort } = require('./ArraySorter/nu
 
 
 */
+
 function sort(data, ascending = true) {
 
     if (isArray(data) && data.length > 0) {
